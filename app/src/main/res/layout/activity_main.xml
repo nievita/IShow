@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vita.ishow.MainActivity">
+
+    <!-- 内容显示-->
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 左侧抽屉 -->
+    <FrameLayout
+        android:id="@+id/left_fl"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@color/colorAccent"></FrameLayout>
+
+    <!-- 右侧抽屉 -->
+    <FrameLayout
+        android:id="@+id/right_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@color/colorPrimary"></FrameLayout>
+</android.support.v4.widget.DrawerLayout>
