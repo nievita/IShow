@@ -8,8 +8,6 @@ import android.widget.FrameLayout;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    private DrawerLayout drawerLayout;
-    private FrameLayout contentFl, leftFL, rightFL;
 
     private long firstTime = 0;
 
@@ -23,12 +21,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void initView()
     {
-        drawerLayout = (DrawerLayout) findViewById(R.id.root);
-        leftFL = (FrameLayout) findViewById(R.id.left_fl);
-        rightFL = (FrameLayout) findViewById(R.id.right_fl);
-
-//        drawerLayout.closeDrawer(leftFL);
-//        drawerLayout.openDrawer(rightFL);
     }
 
     @Override
